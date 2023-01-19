@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="imgLogo-nombreLogo">
+                <img src="imagen/logo.png" alt="logo" class="logo-img">
+                <h1 class="nombre-empresa">Be Gaming</h1> 
+            </div>  
+            <div class="btn-menu">
+                <i class="fas fa-bars"></i>
+                <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+            </div>
+        </div>
+        <nav class="menu">
+         <ul class="navegacion">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="ayuda.html">Ayuda</a></li>
+              <li><a href="ventas.html">Ventas</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="container-carrito">
+        <div class="formulario-carrito">
+            <label for="uname">Nombre:</label>
+            <input type="text" name="Nombre" id="input-name">
+            <label for="uname">Apellido</label>
+            <input type="text" name="Apellido" id="input-apellido">
+            <label for="uname">Producto: </label>
+            <input type="text" name="productos" id="input-producto">
+            <label for="uname">Cantidad: </label>
+            <input type="text" name="Cantidad" id="input-cantidad">
+            <button id="btn-cargar">cargar</button>
+        </div>
+        <div class="tabla-carrito">
+            <table>
+                <thead>
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody id="body-tabla">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="advertencia">
+        </div>
+        <div class="filtro">
+            <label for="name">Unidad de productos:</label>
+            <input type="number" name="unidad" id="input-filtro">
+            <button id="btn-filtro">enviar</button>
+        </div>
+    </div>
+    <footer>
+        <p><b>  be gaming </b></p>
+        <div class="container-redsocial">
+            <a href="" target="_blank"><img class="logoig" src="imagen/logoig2.jpg"/> </a>
+            <a href="" target="_blank"> <img class="logofb" src="imagen/logofacebook.jpg"></a>
+        </div>
+    </footer>
+    <script src="js/tabladinamica.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

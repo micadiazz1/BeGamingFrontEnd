@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <div class="imgLogo-nombreLogo">
+                <img src="imagen/logo.png" alt="logo" class="logo-img">
+                <h1 class="nombre-empresa">Be Gaming</h1> 
+            </div>  
+            <div class="btn-menu">
+                <i class="fas fa-bars"></i>
+                <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+            </div>
+       </div>
+       <nav class="menu">
+         <ul class="navegacion">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="ayuda.html">Ayuda</a></li>
+              <li><a href="ventas.html">Ventas</a></li>
+          </ul>
+        </nav>
+          <script src="js/menu.js"></script>
+    </header>
+    
+    <div class="ayuda"> 
+        <h1>Preguntas Frecuentes</h1>
+        <ul class="preguntas">
+            <li>
+                <dl>
+                    <dt>¿Son precios finales o más IVA?<dt>
+                    <dd>Todos los precios son finales IVA incluido.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>¿Los precios publicados en la web en que moneda están? </dt>
+                    <dd>Todos los precios de la web están expresados en pesos argentinos.</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>¿Que costo tiene un envío?</dt>
+                    <dd>El costo del mismo se abona con el pedido, es decir, el pedido incluye el costo del envío. El valor del envío depende de las dimensiones del paquete y distancia. 
+                    </dd>
+                </dl>
+            </li>
+            </li>
+            <li>
+                <dl>
+                    <dt>¿Hacen envíos al interior?</dt>
+                    <dd>Hacemos envíos a todo el país mediante OCA, que es un servicio Puerta a Puerta (puede llegar a tu domicilio o a la sucursal de OCA más cercana a tu domicilio).
+                </dd>
+            </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>¿Hacen factura A? ¿Cómo la solicito? </dt>
+                    <dd>Efectivamente hacemos factura A, y en el caso de ser un cliente nuevo tiene que ingresar el cliente con número de CUIT y en las observaciones del pedido aclarar que es con factura A.
+                </dd>
+            </dl>
+            </li>
+        </ul>
+    
+    </div>
+    <div class="container-consulta">
+        <h2>Consultas</h2>
+            <div class="formulario-de-consultas">
+                <form>
+                <label for="Name">Nombre:</label> <input type="text" name="Nombre" value="">
+                <label for="Name">Apellido:</label> <input type="text" name="Apellido" value="">
+                <label for="Name">Gmail:</label> <input type="text" name="E-mail" value="">
+                </form>
+            </div>
+            <div class="captcha">
+                <h4> I'm captcha</h4>
+                    <p class="parraforesultado"> Ingrese el resultado:</p>
+                        <img src="imagen/captcha-jpg.png" alt="captcha 2 + 3" class="img-captcha">
+                    <div class="captcha-btn-input">
+                        <form>
+                            <input type="text" name="respuesta" id="respuesta" value="">
+                        </form>
+                        <button  type="button" id="btn-enviar">Enviar</button>
+                    </div>    
+                        <div class="container-de-error">
+                            <p id="resultado-de-incorrecto-correcto"></p>  
+                            <img src="" alt="" id="img-captcha">
+                    </div>
+            </div>
+            
+                    
+    </div>
+    
+    <footer>
+          <p><b>  be gaming </b></p>
+            <div class="container-redsocial">
+              <a href="" target="_blank"><img class="logoig" src="imagen/logoig2.jpg"/> </a>
+              <a href="" target="_blank"> <img class="logofb" src="imagen/logofacebook.jpg"></a>
+            </div>
+    </footer>
+    <script src="js/captcha.js"> </script>
+</body>
+</html>
